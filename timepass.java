@@ -6,8 +6,8 @@ public class timepass {
         System.out.print("Enter a number");
         Scanner sc=new Scanner(System.in);
         n=sc.nextInt();
-        //triangle 1
-        for(i=1;i<=2*n-1;i++){
+        //logic
+        for(i=1;i<=2*n-1;i++){           //i indicates the row, n is the maximum no. of stars, k is for spac and j is printing stars
             if(i<=n){
                 for(k=n-1;k>=i;k--){
                     System.out.print(" ");
@@ -17,7 +17,7 @@ public class timepass {
                 }
                 System.out.println();
             }
-            else{
+            else{                             //here i>n, hence we do i-n in order to print the ulta triangle
                 for(k=1;k<=i-n;k++){
                     System.out.print(" ");
                 }
